@@ -1,0 +1,50 @@
+body{
+    background-color: grey;
+    width: auto;
+    padding: 10px 10px 50px 50px;
+}
+.first{
+    background-color: white;
+    padding: 20px;
+    width: 80em;
+    height: 50em;
+}
+.second{
+    text-align: center;
+}
+.third{
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.thirdA, .thirdB, .thirdC, .thirdD, .thirdE{
+    color: #FFFFFF;
+    background-color: black;
+    width:fit-content;
+    margin: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.fourthA{
+    
+    
+}
+.fourthB{
+    background-color: green;
+    padding: 20px;
+    font-size: 30pt;
+    margin: 5px;
+    width: 20px;
+    
+}
+.fourthC{
+    font-size: 20px;
+    font-weight: 700;
+}
+.fourthD{
+    
+}
+.fourthE{
+    
+}

@@ -1,0 +1,25 @@
+.first{
+    background-color: red;
+}
+.second{
+    background-color: blue;
+}
+.three{
+    font-family: Arial;
+    font-size: 10;
+}
+.fourth{
+    font-family: 'Segoe UI';
+    font-size: 30;
+    font-weight: 500;
+}
+body{
+    background-color: aqua;
+}
+.fifth{
+    border-style: solid;
+}
+.sixth{
+    text-align: center;
+}
+
