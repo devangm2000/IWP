@@ -1,54 +1,74 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
     <head>
-        <title></title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>5th Question</title>
     </head>
+
     <body>
-        <table>
-            <tr>
-                <th>The World of Fruit</th>
+        <table border="1" cellspacing="0" cellpadding="0" rules=none style="margin-left: auto;margin-right: auto;">
+            <tr style="text-align: right; background-color: grey;">
+                <th colspan="2" style="padding: 10px 30px 10px 20px;">The World of Fruit</th>
+            </tr>
+            <tr style="text-align: right;">
+                <th colspan=" 2" style="padding: 10px 40px 10px 20px;">Fruit Survey</th>
+            </tr>
+            <tr style="text-align:right;">
+                <td style="padding: 10px 10px 8px 15px;">Hello</td>
+                <td style="padding: 10px 30px 9px 10px;"><input type=" text">
+                </td>
+            </tr>
+            <tr style="text-align:right;">
+                <td style="padding: 10px 10px 8px 15px;">Address</td>
+                <td style="padding: 10px 30px 8px 10px;"><input type="text"></td>
+            </tr>
+            <tr style="text-align:right;">
+                <td style="padding: 10px 10px 8px 15px;">Email</td>
+                <td style="padding: 10px 30px 8px 10px;"><input type="email"></td><br>
             </tr>
             <tr>
-                <th>Fuit Survey</th>
-            </tr>
-            <tr>
-                <td>Name:</td>
-                <td><input type="text" name="name"><br></td>
-            </tr>
-            <tr>
-                <td>Address:</td>
-                <td> <input type="text" name="address"><br></td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td><input type="text" name="email"><br></td>
-            </tr>
-            <tr>
-                <td>How many pieces of fruits<br>do u eat per day</td>
-                <td><input type="radio" value="0">
-                    <label for="0">0</label><br><br>
-                    <input type="radio" value="2">
-                    <label for="1">1</label><br><br>
-                    <input type="radio" value="2">
-                    <label for="2">2</label><br><br>
-                    <input type="radio" value="More">
-                    <label for="More">More than 2</label><br><br>
+                <td style="text-align:right; vertical-align: top; padding: 10px 10px 8px 15px;">
+                    How many pieces of fruits<br> do
+                    you eat per day?
+                </td>
+                <td style="padding: 10px 35px 8px 5px;">
+                    <input type="radio" id="0" name="fruits">
+                    <label for="0">0</label><br>
+                    <input type="radio" id="1" name="fruits">
+                    <label for="1">1</label><br>
+                    <input type="radio" id="2" name="fruits">
+                    <label for="2">2</label>
                 </td>
             </tr>
             <tr>
-                <td>My favourite Fruits</td>
-                <td><select name="fruits" id="fruits">
-                    <option value="Apple">Apple</option>
-                    <option value="Banana">Banana</option>
-                    <option value="Mango">Mango</option>
-                </select><br></td>
+                <td style="text-align:right; vertical-align: top; padding: 10px 10px 9px 15px;">My favourite fruit</td>
+                <td style="padding: 10px 35px 8px 5px;">
+                    <select size="4">
+                        <option>Apple</option>
+                        <option>Banana</option>
+                        <option>Plum</option>
+                        <option>Pomegranate</option>
+                        <option>Mango</option>
+                        <option>Orange</option>
+                    </select>
+                </td>
             </tr>
             <tr>
-                <td>Would you like a brochure</td>
-                <td><input type="checkbox"><br>
+                <td style="text-align:right; padding: 10px 10px 8px 15px;">Would you like a <br>brochure?</td>
+                <td style="padding: 10px 35px 8px 5px;"><input type="checkbox" name="" id=""></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Submit"></td></td>
+                <td colspan="2" style="text-align: center; padding: 5px;">
+                    <button type="submit">Submit</button>
+                </td>
             </tr>
         </table>
+
+
+
     </body>
+
 </html>
