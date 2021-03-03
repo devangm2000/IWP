@@ -18,8 +18,10 @@ body{
 }
 .fifth{
     border-style: solid;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.sixth{
-    text-align: center;
-}
+
 
