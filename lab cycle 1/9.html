@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>9th Question</title>
+        <link rel="stylesheet" href="9.css">
+        <script>
+            function canvas() {
+                var c = document.getElementById("canvas");
+                var ctx = c.getContext('2d');
+                var img = document.getElementById("football");
+                ctx.drawImage(img, 50, 50, 500, 300);
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <h1><u>Adding an image using canvas in our page:</u></h1>
+        <h3>Image to use:</h3>
+        <img src="football.jpeg" alt="football" id="football" width="300px" height="200px"><br>
+        <p>Canvas to fill:</p><br>
+        <canvas id="canvas" width="600" height="400">
+            Your browser does not support the HTML canvas tag
+        </canvas>
+        <p>
+            <button onclick="canvas()">Try me</button>
+        </p>
+        <hr>
+
+        <h1><u>Adding video in our page:</u></h1>
+        <h3>Using Video Tag:</h3>
+        <video width="880" height="720" controls autoplay muted>
+            <source src="Video.mp4" type="video/mp4">
+        </video>
+        <h3>Using Embed Tag:</h3>
+        <embed src="football.mp4" width="720" height="640" controls muted>
+        <h3>Using Object Tag:</h3>
+        <object data="Riviera'20 Official Aftermovie _ VIT Vellore.mp4" width="880" height="620" controls autoplay
+            muted></object>
+
+    </body>
+
+</html>
