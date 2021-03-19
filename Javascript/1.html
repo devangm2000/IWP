@@ -1,0 +1,31 @@
+<html>
+
+    <body>
+        <form>
+            <h1>Check for Palindrome</h1>
+            <label for="pali">Enter text</label>
+            <input type="text" id="pali">
+            <button onclick="find()">Find Palindrome</button>
+        </form>
+        <script type="text/javascript" charset="utf-8">
+            function find() {
+
+                var a = document.getElementById("pali").value;
+                var len = a.length;
+                for (var i = 0; i < len / 2; i++) {
+                    if (a[i] !== a[len - 1 - i]) {
+                        var x = "Not";
+                    }
+                    else {
+                        var x = "IT is";
+                    }
+                }
+                document.write(x);
+
+            }
+
+        </script>
+
+    </body>
+
+</html>

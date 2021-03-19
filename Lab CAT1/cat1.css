@@ -1,0 +1,38 @@
+section{
+    background-color: lightgrey;
+    text-align: center;
+    padding: 50px;
+}
+.first{
+    display: inline-block;
+    text-align: center;
+    margin-left: 170px;
+}
+.first h1{
+    background-color: yellow;
+    border: 5px solid orange;
+}
+.second{
+    border: 2px solid blue;
+    float: right;
+    width: 20%;
+    border: 5px solid red;
+    padding: 1em;
+    text-align: center;
+    margin-right: 100px;
+    align-items: flex-start;
+}
+.second p{
+    font-size: 9pt;
+    font-style: italic;
+}
+.third{
+    display: flex;
+    justify-content: center;
+}
+article img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 1em;
+}

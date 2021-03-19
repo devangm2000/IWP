@@ -1,0 +1,70 @@
+.container{
+    border-style: solid;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 665px;
+    padding: 5px;
+
+}
+.first{
+    border-style: solid;
+    margin: 5px;
+    height: 290px;
+    text-align: center;
+    background-image:url("https://assets.bonappetit.com/photos/5cd32ef32c3537178c3c8f03/16:9/w_4336,h_2439,c_limit/BA-Perfect-Pizza.jpg");
+    background-size: cover;
+}
+
+h1{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 140px;
+    font-size: 50px;
+    font-style: italic;
+}
+h3{
+    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 30px;
+ 
+ }
+
+
+.second{
+    float: left;
+    text-align: center;
+    width: 160px;
+    height: 245px;
+    border-style: solid;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    background-color: lightgray;
+    
+}
+.third{
+    margin-left: 180px;
+    height: 245px;
+    border-style: solid;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: lightblue;
+    
+}
+.fourth{
+    height: 80px;
+    border: solid black;
+    margin: 5px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: larger;
+    background-color: lightcyan;
+}
