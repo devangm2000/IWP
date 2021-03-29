@@ -1,0 +1,87 @@
+html,body{
+    margin:0;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9c1831c0-0bea-4af6-8141-f74e6190c10d/d8a93g7-c55e5e9e-c6fc-49be-a805-c919ad135bcc.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOWMxODMxYzAtMGJlYS00YWY2LTgxNDEtZjc0ZTYxOTBjMTBkXC9kOGE5M2c3LWM1NWU1ZTllLWM2ZmMtNDliZS1hODA1LWM5MTlhZDEzNWJjYy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.y6uNm30-edoOo1yHugWEkYW8fL6Nvogpz62qVABj88U");
+    background-size: cover;
+}
+.header{
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+}
+
+.first{
+    float:left;
+    width: 40%;
+    text-align: center;
+}
+.second{
+    float:right;
+    width: 60%;
+    padding-top: 5px;
+    text-align: right;
+}
+ul li{
+    display:inline;
+    font-size: 2rem;
+    margin-left: 5px;
+    margin-right: 12px;
+    padding: 2px;
+}
+.second a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.container{
+    text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/74a123e8-378f-4e35-a994-e6bfd8b05992/dc95rkv-30e2484a-ba33-42eb-b905-1993b9cda1b5.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNzRhMTIzZTgtMzc4Zi00ZTM1LWE5OTQtZTZiZmQ4YjA1OTkyXC9kYzk1cmt2LTMwZTI0ODRhLWJhMzMtNDJlYi1iOTA1LTE5OTNiOWNkYTFiNS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.ymO1RwimkOpsFXMuLcpydQNepKNwlCSbi3e6DQ3s7H4");
+    color: white;
+    background-size: cover;
+    height: 648px;
+}
+.container .myinfo span{
+    font-size: smaller;
+    font-weight: 400;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    box-shadow:3px 3px 3px grey;  
+    margin: 15px;
+}
+textarea{
+    box-shadow:5px 5px 5px grey;  
+    margin: 15px;
+}
+label{
+    font-style: italic;
+    font-size: larger;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.button{
+    width: 100px;
+    height: 40px;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: black;
+    text-align: center;
+}

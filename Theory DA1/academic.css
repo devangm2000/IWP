@@ -1,0 +1,69 @@
+html,body{
+    margin:0;
+    background-image: url("https://images.unsplash.com/photo-1614109485947-2929f801ab2b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80");
+}
+.header{
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+}
+
+.first{
+    float:left;
+    width: 40%;
+    text-align: center;
+}
+.second{
+    float:right;
+    width: 60%;
+    padding-top: 5px;
+    text-align: right;
+}
+ul li{
+    display:inline;
+    font-size: 2rem;
+    margin-left: 5px;
+    margin-right: 12px;
+    padding: 2px;
+}
+.second a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 1px solid black;
+    height: 630px;
+    background-image: url("https://onlyvectorbackgrounds.com/wp-content/uploads/2018/09/Abstract-Ambient-Light-Background-Day-Blue.jpg");
+}   
+
+h1{
+    font-size: 2em;
+    margin: 30px;
+}
+span{
+    font-weight: 600;
+    font-size: 1.6em;
+}
+.container p{
+    text-align: start;
+    margin-left: 300px;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: black;
+    text-align: center;
+}
