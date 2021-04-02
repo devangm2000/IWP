@@ -9,12 +9,12 @@ html,body{
     width: 100%;
 }
 
-.first{
+.name{
     float:left;
     width: 40%;
     text-align: center;
 }
-.second{
+.link{
     float:right;
     width: 60%;
     padding-top: 5px;
@@ -27,10 +27,11 @@ ul li{
     margin-right: 12px;
     padding: 2px;
 }
-.second a{
+.link a{
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .container{
     max-width: 1200px;
     margin-left: auto;
@@ -43,7 +44,7 @@ ul li{
     background-image: url("https://onlyvectorbackgrounds.com/wp-content/uploads/2018/09/Abstract-Ambient-Light-Background-Day-Blue.jpg");
 }   
 
-h1{
+.container h1{
     font-size: 2em;
     margin: 30px;
 }

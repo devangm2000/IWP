@@ -1,6 +1,6 @@
 html,body{
     margin:0;
-    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9c1831c0-0bea-4af6-8141-f74e6190c10d/d8a93g7-c55e5e9e-c6fc-49be-a805-c919ad135bcc.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOWMxODMxYzAtMGJlYS00YWY2LTgxNDEtZjc0ZTYxOTBjMTBkXC9kOGE5M2c3LWM1NWU1ZTllLWM2ZmMtNDliZS1hODA1LWM5MTlhZDEzNWJjYy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.y6uNm30-edoOo1yHugWEkYW8fL6Nvogpz62qVABj88U");
+    background-image: url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg");
     background-size: cover;
 }
 .header{
@@ -10,12 +10,12 @@ html,body{
     width: 100%;
 }
 
-.first{
+.name{
     float:left;
     width: 40%;
     text-align: center;
 }
-.second{
+.link{
     float:right;
     width: 60%;
     padding-top: 5px;
@@ -28,7 +28,7 @@ ul li{
     margin-right: 12px;
     padding: 2px;
 }
-.second a{
+.link a{
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -48,6 +48,9 @@ ul li{
 .container .myinfo span{
     font-size: smaller;
     font-weight: 400;
+}
+.contactform p{
+font-size: larger;
 }
 table{
     margin-left: auto;
@@ -72,6 +75,7 @@ label{
     width: 100px;
     height: 40px;
     font-size: larger;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
