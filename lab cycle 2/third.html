@@ -5,25 +5,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script>
-            function find() {
-                var num1 = parseInt(document.getElementById("noofmiles").value);
-                var num2 = parseInt(document.getElementById("cost").value);
-                var num3 = parseInt(document.getElementById("consumption").value);
-                window.alert("Total=" + num1 * num2 / num3);
-            }
-        </script>
+        <title>Question 3</title>
+
     </head>
 
     <body>
-        <label for="noofmiles">Number of Miles</label>
-        <input type="text" id="noofmiles"><br>
-        <label for="cost">Cost of Gallons</label>
-        <input type="text" id="cost"><br>
-        <label for="consumption">Car Gas consumption</label>
-        <input type="text" id="consumption"><br>
-        <button onclick="find()">Cost:</button>
+        <script>
+            var arr = prompt("Enter Number of Miles,cost of a gallon and car gas consumption").split(" ")
+            alert("Total is: " + (arr[0] * arr[1] / arr[2]))
+        </script>
     </body>
 
 </html>

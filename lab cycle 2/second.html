@@ -5,18 +5,26 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script>
+        <title>Question 2</title>
 
-        </script>
     </head>
 
     <body>
-        <input type="text" id="text1"></input>
-        <input type="button" id="button1" value="Add" onclick="add_element_to_array();"></input>
-        <input type="button" id="button2" value="Display" onclick="display_array();"></input>
-        <div id="Result"></div>
-
+        <button id="count">Click Me</button>
+        <script>
+            const btn = document.querySelector("#count")
+            btn.addEventListener("click", () => {
+                var n = prompt("Enter size of array:")
+                var arr = prompt("Enter the numbers:").split(",")
+                var count = 0
+                for (let i = 0; i < n; i++) {
+                    if (arr[i] > 13 && arr[i] < 29) {
+                        count++;
+                    }
+                }
+                alert("Total numbers between 13 and 29:" + count)
+            })
+        </script>
     </body>
 
 </html>
