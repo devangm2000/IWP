@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+        <title>Word Decoder</title>
+        <script type="text/javascript">
+            var i;
+            var check = ["DELHI", "MUMBAI", "CHENNAI", "VELLORE", "BANGALORE", "GURGAON", "NOIDA", "KOLKATA", "HYDERABAD", "AMRITSAR"];
+            var dis = ["E D H I L", "I M U A M B", "E C N H N I A", "E V L O E R L", "A B N G A L O E R", "A G G U R N O", "I O D N A", "K A O T L A K", "H D Y A D B E A R", "M R T I R A R A"];
+            function generate() {
+                i = parseInt(Math.random() * 9 + 0);
+                document.getElementById("p1").innerHTML = dis[i];
+                document.getElementById("p2").innerHTML = "Hint: Hint No." + (i + 1);
+            }
+            function checks(form) {
+                var val = form.ans.value;
+                if ((val.toUpperCase()).localeCompare(check[i]) === 0)
+                    alert("Correct!"); else alert("Incorrect!");
+            }
+        </script>
+    </head>
+    <style>
+        #p1 {
+            color: red;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+    </style>
+
+    <body>
+        <p id="p1"></p>
+        <p id="p2"></p> <input type="button" value="Generate" onclick="generate();">
+        <form> <input type="text" name="ans"> <input type="button" value="Check" onclick="checks(this.form);"> </form>
+    </body>
+
+</html>

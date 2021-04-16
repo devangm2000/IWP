@@ -6,17 +6,50 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script src="fifth.js"></script>
+
         <link rel="stylesheet" href="fifth.css">
     </head>
 
     <body>
         <div id="container">
 
+        </div><br>
+        <button id="changeBg">Change Image</button><br>
+        <div id="leftbgright">
+            <img src="https://images.ctfassets.net/hrltx12pl8hq/4plHDVeTkWuFMihxQnzBSb/aea2f06d675c3d710d095306e377382f/shutterstock_554314555_copy.jpg"
+                alt="">
+        </div><br>
+        <div id="buttons">
+            <button id="left">Left</button>
+            <button id="background">Background</button>
+            <button id="right">Right</button>
         </div>
-        <button onclick="myFunction()">Change bg</button>
-        <p id="edittext">Hello!</p>
-        <button onclick="EditText()">Change text</button>
+        <br>
+        <div id="final">
+            <input type="text" id="textinput">
+            <button id="edittextbtn">Change text</button><br>
+            <h1 id="edittext"></h1>
+        </div>
+        <div id="final">
+            <h1 id="header">This is an IWP assignment. Choose an option for changing font size and font colour</h1>
+            <select id="fontsize">
+                <option value="1em">1em</option>
+                <option value="1.5em">1.5em</option>
+                <option value="2em">2em</option>
+                <option value="2.5em">2.5em</option>
+            </select>
+            <select id="fontcolour">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="black">Black</option>
+            </select>
+        </div>
+
+
+
+        <script src="fifth.js"></script>
     </body>
 
 </html>

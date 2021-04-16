@@ -1,0 +1,43 @@
+<html>
+
+    <head>
+        <title>Parking Charges</title>
+    </head>
+
+    <body>
+        <p>Enter the no. of hours:</p>
+        <input type="number" id="hours">
+        <button id="calculateB">Calculate</button>
+        <p id="output"></p>
+
+        <script type="text/javascript">
+            const totalhours = document.querySelector("input");
+            const calculateB = document.querySelector("#calculateB");
+            const output = document.querySelector("#output")
+
+
+            calculateB.addEventListener("click", function () {
+                calculate_charges(totalhours.value)
+            })
+
+            function calculate_charges(totalhours) {
+                let basecharges = 2;
+                let charges = 0;
+                if (totalhours <= 24 && totalhours > 3) {
+                    totalhours -= 3;
+                    newcharges = totalhours * 0.5;
+                    charges = basecharges + newcharges;
+                    output.innerHTML = "Charges are $2 for first 3 hours" + "<br />" + " Charges are $0.5 for rest of the hours" + "<br />" + "Your total is: $" + charges;
+                }
+                else if (totalhours <= 3 && totalhours > 0) {
+                    charges = 2;
+                    output.innerHTML = "Charges are $2 for first 3 hours" + "<br />" + "Your total is: $" + charges;
+                }
+                else {
+                    output.innerHTML = "Invalid";
+                }
+            }
+        </script>
+    </body>
+
+</html>

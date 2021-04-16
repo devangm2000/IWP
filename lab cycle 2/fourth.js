@@ -1,24 +1,21 @@
-let n = parseInt(prompt("Enter the number"));
-let r = n % 10;
-let q = Math.floor(n / 10);
-sum = q ** 2 + r ** 2;
-// console.log(r);
-// console.log(q);
-// console.log(sum);
-while (n) {
-    if (sum !== 1) {
-        r = sum % 10;
-        q = Math.floor(sum / 10);
-        sum = q ** 2 + r ** 2;
+let n = prompt("Enter the number");
+
+let happyNumber = function (n, counter) {
+    let result = false;
+    if (counter < 10) {
+        let array = n.toString().split("").map(n => n * n);
+        let sum = array.reduce((a, b) => a + b, 0);
+
+        if (sum === 1) {
+            alert("Happy Number");
+        }
+        else {
+            counter++;
+            happyNumber(sum, counter)
+        }
     }
     else {
-        break;
+        alert("Not a Happy Number");
     }
-
 }
-if (sum === 1) {
-    console.log(`${n} is the happy number`);
-}
-else {
-    console.log(`${n} is not the happy number`);
-}
+happyNumber(n, 0)
