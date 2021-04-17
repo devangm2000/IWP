@@ -1,7 +1,7 @@
 <html>
 
     <head>
-        <title>Parking Charges</title>
+        <title>6th Question</title>
     </head>
 
     <body>
@@ -27,7 +27,7 @@
                     totalhours -= 3;
                     newcharges = totalhours * 0.5;
                     charges = basecharges + newcharges;
-                    output.innerHTML = "Charges are $2 for first 3 hours" + "<br />" + " Charges are $0.5 for rest of the hours" + "<br />" + "Your total is: $" + charges;
+                    output.innerHTML = "Charges are $2 for first 3 hours" + "<br />" + " Charges for rest of the hours=" + totalhours + "*0.5=" + newcharges + "<br />" + "Your total is: $" + charges;
                 }
                 else if (totalhours <= 3 && totalhours > 0) {
                     charges = 2;

@@ -1,45 +1,69 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
     <head>
-        <title>"QUIZ"</title>
-        <script type="text/javascript">
-            function cal() {
-                var x, x1, x2, x3; var count = 0;
-                x = document.quiz.capital.value;
-                if (x == "delhi") {
-                    count++;
-                }
-                x1 = document.quiz.continents.value
-                if (x1 == "7") {
-                    count++;
-                }
-                x2 = document.quiz.oceans.value;
-                if (x2 == "5") {
-                    count++;
-                }
-                x3 = document.quiz.vizag.value;
-                if (x3 == "false") {
-                    count++;
-                }
-                alert("YOUR SCORE IS: " + count);
-            }
-        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="9.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     </head>
 
     <body>
-        <form name="quiz" method="GET" action="Quiz.html">
-            <h1>"QUIZ1 QUESTIONS"</h1>
-            <p><b>1.What is the capital of India?</b></p><br> <input type="radio" name="capital"
-                value="mumbai">Mumbai<br>
-            <input type="radio" name="capital" value="delhi" />Delhi<br>
-            <p><b>2.Number of continents in the world?</b></p><br> <input type="radio" name="continents" value="7">7<br>
-            <input type="radio" name="continents" value="10" />10</br>
-            <p><b>3.Number of oceans in the world?</b></p><br> <input type="radio" name="oceans" value="5">5<br><input
-                type="radio" name="oceans" value="3" />3</br>
-            <p><b>4.Vizag is located in Tamilnadu?</b></p><br> <input type="radio" name="vizag"
-                value="true">true<br><input type="radio" name="vizag" value="false" />false</br> <br><br>
-            <input type="button" onclick="cal();" name="score" value="submit" /><br><br>
-        </form>
+        <div class="start_btn"><button>Start Quiz</button></div>
+        <div class="info_box">
+            <div class="info-title"><span>Some Rules of this Quiz</span></div>
+            <div class="info-list">
+                <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+                <div class="info">2. Once you select your answer, it can't be undone.</div>
+                <div class="info">3. You can't select any option once time goes off.</div>
+                <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+                <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+
+        <div class="quiz_box">
+            <header>
+                <div class="title">IWP 9th Question</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">15</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text">
+                </div>
+                <div class="option_list">
+                </div>
+            </section>
+
+            <footer>
+                <div class="total_que">
+                </div>
+                <button class="next_btn">Next Question</button>
+            </footer>
+        </div>
+
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed the Quiz</div>
+            <div class="score_text">
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay</button>
+                <button class="quit">Quit</button>
+            </div>
+        </div>
+        <script src="9.js"></script>
+
     </body>
+
+</html>
 
 </html>

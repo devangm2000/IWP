@@ -1,30 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>10th Question</title>
+        <script type="text/javascript"> function validate(form) {
+                var count = 0;
+                var temp;
+                var name = form.cardname.value;
+                var number = form.number.value;
+                if (name.localeCompare("American Express") === 0) {
+                    if (number.length === 15) {
+                        temp = parseInt(number / 10000000000000);
+                        if ((temp === 34) || (temp === 37))
+                            count++;
+                    }
+                }
+                else if (name.localeCompare("Diners Club") === 0) {
+                    if (number.length === 14) {
+                        temp = parseInt(number / 1000000000000);
+                        if ((temp === 36) || (temp === 38))
+                            count++;
+                        temp = parseInt(number / 100000000000);
+                        if ((temp >= 300) && (temp <= 305))
+                            count++;
+                    }
+                }
+
+                else if (name.localeCompare("JCB") === 0) {
+
+
+                    if (number.length === 15) {
+                        temp = parseInt(number / 100000000000);
+                        if ((temp === 2131) || (temp === 1800)) count++;
+                    }
+                    else if (number.length === 16) {
+                        temp = parseInt(number / 100000000000000);
+                        if (temp === 35) count++;
+                    }
+                }
+                else if (name.localeCompare("Discover") === 0) {
+                    if (number.length === 16) {
+                        temp = parseInt(number / 1000000000000);
+                        if (temp === 6011)
+                            count++;
+                        temp = parseInt(number / 100000000000000);
+                        if (temp === 65) count++;
+                    }
+                }
+                else if (name.localeCompare("Master Card") === 0) {
+                    if (number.length === 16) {
+                        temp = parseInt(number / 100000000000000);
+                        if ((temp >= 51) && (temp <= 55))
+                            count++;
+                    }
+                }
+                else if (name.localeCompare("Visa") === 0) {
+                    if (number.length === 13) {
+                        temp = parseInt(number / 1000000000000);
+                        if (temp === 4)
+                            count++;
+                    }
+                    else if (number.length === 16) {
+                        temp = parseInt(number / 1000000000000000);
+                        if (temp === 4)
+                            count++;
+                    }
+                }
+                if (count === 0)
+                    document.getElementById("p1").innerHTML = "Invalid Credit Card";
+                else
+                    document.getElementById("p1").innerHTML = "Valid Credit Card";
+                count = 0;
+            }
+        </script>
+        <style>
+            form {
+                margin: 0 auto;
+                border: 1px solid black;
+                width: fit-content;
+                padding: 20px;
+            }
+
+            label,
+            select,
+            input {
+                margin-bottom: 20px;
+            }
+        </style>
     </head>
 
     <body>
-        <div id="container">
+        <form>
             <h1>Validate Credit Cards</h1>
-            <label for="creditcard">Credit Card</label>
-            <select id="creditcard">
-                <option value="ae">American Express</option>
-                <option value="dc">Diners Club</option>
-                <option value="disc">Discover</option>
-                <option value="jcb">JCB</option>
-                <option value="mcard">MasterCard</option>
-                <option value="visa">Visa</option>
-            </select><br>
-            <label for="number">Number</label>
-            <input type="text" id="number"><br>
-            <button>Validate</button>
-            <input type="text" id="final">
-        </div>
+            <label for="cardname">Credit Card:</label>
+            <select name="cardname" id="cardname">
+                <option value="American Express">American Express</option>
+                <option value="Diners Club">Diners Club</option>
+                <option value="Discover">Discover</option>
+                <option value="JCB">JCB</option>
+                <option value="Master Card">Master Card</option>
+                <option value="Visa">Visa</option>
+            </select>
+            <br>
+            <label for="number">Number:</label>
+            <input type="number" name="number" id="number"><br>
+            <input type="button" value="Validate" onclick="validate(this.form);">
+            <p id="p1"></p>
+        </form>
 
     </body>
 

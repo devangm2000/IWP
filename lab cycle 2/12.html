@@ -6,10 +6,29 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>12th Question</title>
+        <style>
+            #container {
+                margin: 0 auto;
+                border: 1px solid black;
+                width: fit-content;
+                padding: 0px 20px 20px 20px;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
-
+        <div id="container">
+            <h1>Blue Cow by Gelett Burgess(published in The Lark, 1895)</h1>
+            <p id="text">
+                I never saw a <b><span id="textchange">Blue</span></b> Cow, I hope never to see one; But i can tell you
+                anyhow; I'd rather see than be one
+            </p>
+            <label for="textInput">Change the cow's colour to:</label>
+            <input type="text" id="textInput">
+            <button id="changeButton">Change</button>
+        </div>
+        <script src="12.js"></script>
     </body>
 
 </html>
