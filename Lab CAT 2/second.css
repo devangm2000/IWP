@@ -1,0 +1,23 @@
+img {
+    float: left;
+}
+#head{
+    display: block;
+    height: 170px;
+    margin-bottom: 10px;
+    /* padding: 20px; */
+    background-color: lightblue;
+}
+h1{
+    font-size: 3em;
+}
+#left{
+    display: inline-block;
+    margin-top: 20px;
+}
+#right{
+    display: inline-block;
+    margin-left: 100px;
+    width: 1000px;
+    border-left: 1px solid black;
+}

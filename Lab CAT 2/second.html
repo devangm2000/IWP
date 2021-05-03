@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2nd Question</title>
+        <link rel="stylesheet" href="second.css">
+    </head>
+
+    <body>
+        <div id="head">
+            <h1><img src="https://www.deccanherald.com/sites/dh/files/articleimages/2020/08/20/irctc-1595679107%281%29-1597922827.jpg"
+                    alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
+                IRCTC</h1>
+        </div>
+        <div id="left">
+            <label for="nooftickets">Number of Tickets</label>
+            <input type="text" name="nooftickets" id="nooftickets">
+            <br>
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset" id="reset">Reset</button>
+        </div>
+        <div id="right">
+            <table border="1" cellspacing="0" cellpadding="0" rules=none style="margin-left: auto;margin-right: auto;">
+                <tr style="text-align:right;">
+                    <td style="padding: 10px 10px 8px 15px;">Source Station</td><br>
+                    <td style="padding: 10px 10px 8px 15px;">Destination Station</td><br>
+                    </td>
+                </tr>
+                <tr style="text-align:right;">
+                    <td style="padding: 10px 10px 8px 15px;"><input type="text" id="source"></td>
+                    <td style="padding: 10px 10px 8px 15px;"><input type="text" id="destination"></td>
+                    </td>
+                </tr>
+                <tr style="text-align:right;">
+                    <td style="padding: 10px 10px 8px 15px;">Train Name</td>
+                    <td style="padding: 10px 10px 8px 15px;">Coach Name</td>
+                </tr>
+                <tr style="text-align:right;">
+                    <td style="padding: 10px 10px 8px 15px;"><select id="train" name="train">
+                            <option value="Rajdhani1">Rajdhani1</option>
+                            <option value="Rajdhani2">Rajdhani2</option>
+                            <option value="Rajdhani3">Rajdhani3</option>
+                            <option value="Rajdhani4">Rajdhani4</option>
+                        </select></td>
+                    <td style="padding: 10px 10px 8px 15px;"><select id="coach" name="coach">
+                            <option value="S1">S1</option>
+                            <option value="S2">S2</option>
+                            <option value="S3">S3</option>
+                            <option value="S4">S4</option>
+                        </select></td>
+                    </td>
+                </tr>
+                <tr style="text-align:right;">
+                    <td style="padding: 10px 10px 8px 15px;">Date</td>
+                    <td style="padding: 10px 10px 8px 15px;">Time</td>
+                </tr>
+                <tr style="text-align:right;">
+                    <td style="padding: 10px 10px 8px 15px;"><input type="date" name="date" id="date"></td>
+                    <td style="padding: 10px 10px 8px 15px;"><input type="time" name="time" id="time"></td>
+                    </td>
+                </tr>
+                <tr style="text-align:right;">
+                    <td style="padding: 10px 10px 8px 15px;">Gender</td>
+                    <td style="padding: 10px 10px 8px 15px;">Count</td>
+                </tr>
+                <tr style="text-align:right;">
+                    <td style="padding: 10px 10px 8px 15px;"><select id="gender" name="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select></td>
+                    <td style="padding: 10px 10px 8px 15px;"><input type="text" id="count"></td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p id="answer">No Tickets available</p>
+        <script src="second.js"></script>
+    </body>
+
+</html>
